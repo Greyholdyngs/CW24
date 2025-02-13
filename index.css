@@ -1,0 +1,39 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    font-family: "Montserrat", serif;
+    font-weight: 500;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 5%;
+    padding-block: 2%;
+}
+header section ul {
+    display: flex;
+    list-style-type: none;
+    gap: 25px;
+    font-size: 100%;
+}
+header section {
+    display: flex;
+    gap: 100px;
+}
+header section li a {
+    text-decoration: none;
+    color:hsla(254, 31%, 27%, 1);
+    font-weight: 600;
+}
+header section ol {
+    gap: 25px;
+    font-size: 100%;
+    list-style-type: none;
+}
+header section ol li a {
+    background-color: hsla(30, 100%, 53%, 1);
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: hsla(0, 100%, 100%, 1);
+}
