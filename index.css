@@ -71,7 +71,7 @@ main {
     gap: 50px;
     align-items: center;
     padding-inline: 5%;
-    padding-block: 10%;
+    padding-block: 7%;
     background: hsla(190, 42%, 65%, 1);
 }
 main section div {
@@ -106,7 +106,7 @@ main section img {
 }
 .second-layout {
     padding-inline: 5%;
-    padding-block: 7%;
+    padding-block: 5%;
 }
 .second-layout .title {
     color: hsla(254, 31%, 27%, 1);
@@ -158,7 +158,163 @@ main section img {
     text-decoration: none;
     color: hsla(30, 100%, 53%, 1);
 }
-
+.third-layout {
+    display: flex;
+    gap: 5%;
+    align-items: center;
+    padding-inline: 5%;
+    padding-block: 7%;
+    font-size: 13px;
+    font-weight: 400;
+    color: hsla(254, 31%, 27%, 1);
+    background: hsla(44, 86%, 70%, 1);
+}
+.third-layout div h3 {
+    font-size: 30px;
+    font-weight: 700;
+    margin-block: 5%;
+}
+.third-layout div ul {
+    margin-top: 5%;
+}
+.third-layout div ul li {
+    display: flex;
+    list-style-type: none;
+    gap: 2%;
+    margin-block: 2%;
+}
+.third-layout div .img {
+    border-radius: 30px;
+}
+.team {
+    padding-inline: 5%;
+    padding-block: 7%;
+    background: hsla(173, 44%, 73%, 1);
+}
+.team .title {
+    font-size: 18px;
+    color: hsla(30, 100%, 53%, 1);
+    font-weight: 600;
+    width: 60%;
+}
+.team .title h2 {
+    font-size: 40px;
+    font-weight: 700; 
+    color: hsla(254, 31%, 27%, 1);
+    margin-block: 1%;
+}
+.team .content {
+    display: flex;
+    gap: 3%;
+    font-size: 20px;
+    font-weight: 700;
+    color: hsla(254, 31%, 27%, 1);
+    margin-block: 5%;
+}
+.team .content .cover {
+    width: 70%;
+}
+.team .content .cover div .p {
+    font-size: 8px;
+    margin-block: 2%;
+}
+.team .content .cover .pp {
+    color: hsla(30, 100%, 53%, 1);
+    font-size: 15px;
+    font-weight: 400;
+    margin-block: 7%;
+}
+.team .content div .img {
+    width: 100%;
+}
+.team .contnt {
+    font-size: 20px;
+    color: hsla(254, 31%, 27%, 1);
+    font-weight: 400;
+    width: 60%;
+}
+.team .contnt p {
+    font-size: 15px;
+    color: hsla(30, 100%, 53%, 1);
+    margin-block: 3%;
+}
+.team .contnt a {
+    text-decoration: none;
+    color: hsla(254, 31%, 27%, 1);
+    font-size: 15px;
+    border: 2px solid hsla(254, 31%, 27%, 1);
+    padding: 1% 2%;
+}
+.testimonial {
+    text-align: center;
+    padding-inline: 5%;
+    padding-block: 7%;
+    color: hsla(254, 31%, 27%, 1);
+    font-weight: 700;
+    font-size: 32px;
+}
+.testimonial h1 {
+    height: 100px;
+    display: grid;
+    align-items: start;
+}
+.testimonial .cover-p {
+    margin-block: 3%;
+}
+.testimonial .p {
+    width: 50%;
+    margin: auto;
+    font-size: 18px;
+    font-weight: 600;
+}
+.testimonial .cover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.testimonial .cover .profile {
+    width: 3%;
+}
+.testimonial .cover .logo {
+    width: 5%;
+}
+.testimonial .cover div {
+    font-size: 13px;
+    font-weight: 900;
+    padding-inline: 1.5%;
+    border-right: 1px solid hsla(0, 0%, 0%, 1);
+    text-align: start;
+}
+.cta {
+    padding-inline: 5%;
+    padding-block: 7%;
+    background: hsla(44, 86%, 70%, 1);
+    font-size: 35px;
+    font-weight: 700;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 1);
+}
+.cta p {
+    font-size: 20px;
+    font-weight: 400;
+    color: hsla(254, 31%, 27%, 1);
+    margin-block: 3%;
+}
+.cta .a {
+    padding: 1% 2.5%;
+    border: 1px solid hsla(254, 31%, 27%, 1);
+    color: hsla(44, 86%, 70%, 1);
+    background-color: hsla(254, 31%, 27%, 1);
+    text-decoration: none;
+    font-size: 15px;
+}
+.cta .aa {
+    padding: 1% 3%;
+    border: 1px solid hsla(254, 31%, 27%, 1);
+    color: hsla(254, 31%, 27%, 1);
+    text-decoration: none;
+    font-size: 15px;
+}
 @media only screen and (max-width: 700px) and (min-width: 0px) {
     header {
         padding-inline: 1%;
@@ -203,6 +359,82 @@ main section img {
     .second-layout .content h1 {
         font-size: 150%;
     }
+    .third-layout {
+        padding-inline: 2.5%;
+        flex-direction: column-reverse;
+        text-align: center;
+        font-size: 70%;
+    }
+    .third-layout div h3 {
+        font-size: 125%;
+    }
+    .third-layout div .img {
+        width: 100%;
+    }
+    .team {
+        padding-inline: 2.5%;
+        text-align: center;
+    }
+    .team .title {
+        width: 100%;
+        font-size: 150%;
+    }
+    .team .title h2 {
+        font-size: 100%;
+        margin-block: 2%;
+    }
+    .team .content {
+        flex-direction: column;
+        font-size: 100%;
+    }
+    .team .content .cover {
+        width: 100%;
+        margin-block: 3%;
+    }
+    .team .contnt {
+        width: 100%;
+        font-size: 100%;
+    }
+    .team .contnt p {
+        font-size: 100%;
+        margin-block: 7%;
+    }
+    .team .contnt a {
+        font-size: 100%;
+    }
+    .testimonial {
+        padding-inline: 2.5%;
+        font-size: 100%;
+    }
+    .testimonial h1 {
+        height: 100%;
+        margin-block: 3%;
+    }
+    .testimonial .p {
+        width: 100%;
+        margin-block: 5%;
+        font-size: 85%;
+    }
+    .testimonial .cover .profile {
+        width: 7%;
+    }
+    .testimonial .cover .logo {
+        width: 10%;
+    }
+    .cta {
+        padding-inline: 2.5%;
+        font-size: 90%;
+    }
+    .cta p {
+        font-size: 80%;
+        margin-block: 5%;
+    }
+    .cta .a {
+        font-size: 90%;
+    }
+    .cta .aa {
+        font-size: 90%;
+    }
 }
 @media only screen and (max-width: 1100px) and (min-width: 700px) {
     main section img {
@@ -229,5 +461,23 @@ main section img {
     }
     .second-layout .content h1 {
         font-size: 140%;
+    }
+    .third-layout div h3 {
+        font-size: 130%;
+    }
+    .third-layout div .img {
+        width: 110%;
+    }
+    .team .content .cover .pp {
+        font-size: 70%;
+    }
+    .testimonial .p {
+        width: 100%;
+    }
+    .cta {
+        font-size: 170%;
+    }
+    .cta p {
+        font-size: 75%;
     }
 }
