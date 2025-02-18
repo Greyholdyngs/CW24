@@ -10,6 +10,7 @@ header {
     align-items: center;
     padding-inline: 5%;
     padding-block: 1%;
+    background-color: hsla(32, 100%, 97%, 0.4);
 }
 header section ul {
     display: flex;
@@ -252,6 +253,7 @@ main section img {
     color: hsla(254, 31%, 27%, 1);
     font-weight: 700;
     font-size: 32px;
+    background-color: hsla(32, 100%, 97%, 0.4);
 }
 .testimonial h1 {
     height: 100px;
@@ -410,6 +412,162 @@ main section img {
     height: 50px;
     display: grid;
     align-items: center;
+}
+.contact-form {
+    display: flex;
+    gap: 30px;
+    padding-inline: 5%;
+    padding-block: 7%;  
+    background: hsla(190, 42%, 65%, 1);
+}
+.contact-form .content {
+    font-size: 16px;
+    font-weight: 600;
+    color: hsla(30, 100%, 53%, 1);
+    width: 50%;
+}
+.contact-form .content h1 {
+    font-size: 40px;
+    font-weight: 700;
+    color: hsla(254, 31%, 27%, 1);
+    margin-block: 3%;
+}
+.contact-form ul li {
+    list-style-type: none;
+    margin-block: 3%;
+}
+.contact-form ul li a {
+    display: flex;
+    align-items: center;
+    gap: 2%;
+    text-decoration: none;
+    color: hsla(254, 31%, 27%, 1);
+    font-weight: 400;
+}
+.contact-form .form {
+    width: 50%;
+    color: hsla(254, 31%, 27%, 1);
+    font-size: 16px;
+}
+.contact-form .form .container .names label {
+    margin-block: 3%;
+    font-weight: 600;
+}
+.contact-form .form .container {
+    display: flex;
+    gap: 5%;
+}
+.contact-form .form .container .names{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+.contact-form .form .container .names input {
+    margin-block: 3%;
+    border: 1px solid hsla(30, 100%, 53%, 1);
+    height: 30px;
+    background: none;
+}
+.contact-form .form .selection-box {
+    display: flex;
+    flex-direction: column;
+}
+.contact-form .form .selection-box label {
+    margin-block: 2%;
+}
+.contact-form .form .selection-box select {
+    border: 1px solid hsla(30, 100%, 53%, 1);
+    height: 30px;
+    margin-block: 1%;
+    background: none;
+}
+.contact-form .form .selection-box select:active {
+    border: 2px solid hsla(30, 100%, 53%, 1);
+}
+.contact-form .form .radio-group {
+    display: flex;
+    gap: 23%;
+}
+.contact-form .form .radio-group .radio-content {
+    display: flex;
+    flex-direction: column;
+    font-weight: 100;
+    margin-block: 2%;
+}
+.contact-form .form .radio-group .radio-content label {
+    font-weight: 300;
+    margin-block: 0.5%;
+}
+.contact-form .form textarea {
+    width: 100%;
+    border: 1px solid hsla(30, 100%, 53%, 1);
+    padding: 1% 1%;
+    margin-block: 2%;
+    background: none;
+}
+.contact-form .form textarea:active {
+    border: 2px solid hsla(30, 100%, 53%, 1);
+}
+.contact-form .form .submit-btn {
+    background-color: hsla(30, 100%, 53%, 1);
+    color: hsla(0, 0%, 100%, 1);
+    border: none;
+    padding: 2%;
+    margin-block: 5%;
+    cursor: pointer;
+    width: 15%;
+    border-radius: 5px;
+}
+footer {
+    padding-inline: 5%;
+    padding-block: 5%;  
+    background-color: hsla(32, 100%, 97%, 0.4);
+}
+footer section {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+footer section .content {
+    font-size: 15px;
+    font-weight: 400;
+    color: hsla(30, 100%, 53%, 1);
+}
+footer section .content h5 {
+    font-size: 13px;
+    font-weight: 800;
+    color: hsla(254, 31%, 27%, 1);
+    margin-block: 3% 1%;
+}
+footer section .content .medials {
+    margin-block: 3% 1%;
+    display: flex;
+    gap: 3%;
+    align-items: flex-end;
+    height: 50px;
+}
+footer section .ul {
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+footer section .ul ul li {
+    list-style-type: none;
+    margin-block-end: 6%;
+}
+footer section .ul ul li a {
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: 700;
+    color: hsla(254, 31%, 27%, 1);
+}
+footer .section {
+    font-size: 13px;
+    font-weight: 400;
+    color: hsla(254, 31%, 27%, 1);
+    padding-block-start: 2%;
+    margin-block-start: 5%;
+    border-top: 1px solid hsla(254, 31%, 27%, 1);
 }
 @media only screen and (max-width: 700px) and (min-width: 0px) {
     header {
@@ -584,6 +742,56 @@ main section img {
     .contact .row .content h4 {
         font-size: 120%;
     }
+    .contact-form {
+        padding-inline: 2.5%;
+        flex-direction: column-reverse;
+    }
+    .contact-form .form {
+        width: 100%;
+        font-size: 90%;
+    }
+    .contact-form .form textarea {
+        width: 97%;
+        margin-block: 5%;
+    }
+    .contact-form .form .radio-group {
+        margin-block: 3%;
+        font-size: 80%;
+    }
+    .contact-form .form .container .names input {
+        width: 100%;
+    }
+    .contact-form .form .selection-box select {
+        margin-block: 3%;
+    }
+    .contact-form .content {
+        font-size: 90%;
+        width: 100%;
+    }
+    .contact-form .content h1 {
+        font-size: 130%;
+    }
+    footer {
+        padding-inline: 2.5%;
+    }
+    footer section {
+        flex-direction: column;
+        width: 100%;
+    }
+    footer section .content p {
+        font-size: 100%;
+        margin-block: 4%;
+    }
+    footer section .ul {
+        margin-block-start: 5%;
+    }
+    footer .section {
+        margin-block-start: 7%;
+        padding-block-start: 5%;
+    }
+    footer .section div {
+        margin-block-start: 3%;
+    }
 }
 @media only screen and (max-width: 1100px) and (min-width: 700px) {
     main section img {
@@ -643,5 +851,18 @@ main section img {
     }
     .contact .row .content p {
         margin-block: 4%;
+    }
+    .contact-form .form {
+        font-size: 90%;
+    }
+    .contact-form .form .radio-group .radio-content {
+        font-size: 80%;
+        margin-block: 4%;
+    }
+    .contact-form .content {
+        font-size: 80%;
+    }
+    .contact-form .content h1 {
+        font-size: 150%;
     }
 }
